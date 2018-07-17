@@ -1,5 +1,7 @@
 # Imports. 
 import time
+import os
+import sys
 
 # Get counter value.
 counter = int(input("Enter a number : "))
@@ -12,4 +14,6 @@ while counter >= 0:
 	counter -= 1
 	time.sleep(1)
 else:
-	print("\nDone.")
+	print("\nDone.\n")
+	python = sys.executable
+	os.execl(python, python, *sys.argv)
