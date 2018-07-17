@@ -11,6 +11,9 @@ if __name__ == '__main__':
     answer = 0
     
     answer = c * b
-    print"Value of c * b is", answer
+    print "Value of c * b is", answer
+    
+    answer = (c + d) / b
+    print "Value of (c + b) / b is", answer
     
     sys.exit(main(sys.argv))
