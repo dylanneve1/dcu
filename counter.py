@@ -13,8 +13,12 @@ while counter >= 0:
 	print(str(counter))
 	counter -= 1
 	time.sleep(1)
+	if counter > 100:
+		print("\nTOO BIG, CHOOSE SMALLER NUMBER\n")
+		break
 else:
 	print("\nDone.\n")
-	# Restart script.
-	python = sys.executable
-	os.execl(python, python, *sys.argv)
+
+# Restart script.
+python = sys.executable
+os.execl(python, python, *sys.argv)
