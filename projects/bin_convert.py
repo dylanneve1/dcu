@@ -36,6 +36,7 @@ class binaryConverter:
 			print(bin(subtractedValues))
 
 		else:
+			print("\nINVALID OPTION")
 			exit()
 
 b = binaryConverter()
