@@ -1,14 +1,29 @@
-print("\nConversion options :\n")
-print("1 - number to binary.")
-print("2 - binary to number.\n")
-mode = int(input("Selection : "))
-print("\n\n")
+import time
 
-if mode is 1:
-	inputNumber = int(input("Enter number : ")
+class binaryConverter:
 
-elif mode is 2:
-	inputNumber = int(input("Enter binary : ")
+	def main(self):
 
-else:
-	exit()
+		print("\nConversion options :\n")
+		print("1 - Number to binary.")
+		print("2 - Binary to number.\n")
+		mode = int(input("Selection : "))
+		print("\n\n")
+
+		if mode is 1:
+			inputNumber = input("Enter number : ")
+			print("\n\n")
+			print(bin(inputNumber))
+
+		elif mode is 2:
+			inputNumber = input("Enter binary : ")
+			print("\n\n")
+			convertedValue = str(inputNumber)
+			print(convertedValue)
+
+		else:
+			exit()
+
+b = binaryConverter()
+
+b.main()
