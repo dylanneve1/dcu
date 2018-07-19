@@ -16,23 +16,31 @@ class binaryConverter:
 
 		if mode is 1:
 			inputNumber = input("Enter number : ")
+			print("\nCalculating...")
+			time.sleep(2)
 			print("\n" + bin(inputNumber))
 
 		elif mode is 2:
 			inputNumber = "0b" + str(input("Enter binary : "))
 			finalValue = int(inputNumber, 2)
+			print("\nCalculating...")
+			time.sleep(2)
 			print("\n" + str(finalValue))
 
 		elif mode is 3:
 			firstNumber = "0b" + str(input("Enter first number : "))
 			secondNumber = "0b" + str(input("Enter second number : "))
 			addedValues = (int(firstNumber, 2)) + (int(secondNumber, 2))
+			print("\nCalculating...")
+			time.sleep(2)
 			print("\n" + bin(addedValues))
 
 		elif mode is 4:
 			firstNumber = "0b" + str(input("Enter first number : "))
 			secondNumber = "0b" + str(input("Enter second number : "))
 			subtractedValues = (int(firstNumber, 2)) - (int(secondNumber, 2))
+			print("\nCalculating...")
+			time.sleep(2)
 			print(bin(subtractedValues))
 
 		else:
